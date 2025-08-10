@@ -1,0 +1,379 @@
+/* custom button styling for use throughout app */
+
+.custom-btn {
+  background-color: #008080;  /* teal */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  text-decoration: underline;
+  background-color: #e5fcfa;  /* same colour as header */
+  color: black;
+  /* offset-x: 3px (right), offset-y: 5px (down), blur-radius: 6px, spread-radius: 2px */
+  box-shadow: 3px 5px 6px 2px rgba(0, 128, 128, 0.7),
+  inset 1px 0 0 0 #008080,                 /* thin line on left */
+  inset 0 1px 0 0 #008080;                 /* thin line on top */
+}
+
+/* shallower button styling to fit into Navbar */
+
+.custom-btn-navbar {
+  background-color: #008080;  /* teal */
+  color: white;
+  border: none;
+  padding: 0.25rem 1rem;      /* less vertical padding */
+  border-radius: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1;             /* tighter line height */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  vertical-align: middle;     /* aligns nicely inline */
+}
+
+.custom-btn-navbar:hover {
+  text-decoration: underline;
+  background-color: #e5fcfa;  /* same colour as header */
+  color: black;
+  box-shadow: 
+    3px 5px 6px 2px rgba(0, 128, 128, 0.7),
+    inset 1px 0 0 0 #008080,   /* thin line on left */
+    inset 0 1px 0 0 #008080;   /* thin line on top */
+}
+
+/* badge styling for free/subscription/purchase badges */
+
+.custom-badge {
+  background-color: #93dc5c; /*light green */
+  color: black; 
+}
+
+/* outline button styling */
+
+.btn-outline-teal {
+  color: #008080;
+  border: 1px solid #008080;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-teal:hover,
+.btn-outline-teal:focus {
+  background-color: #008080;
+  color: #fff;
+  border-color: #008080;
+  text-decoration: none;
+}
+
+.btn-outline-teal:active {
+  background-color: #006666; /* slightly darker teal on click */
+  border-color: #006666;
+  color: #fff;
+}
+
+/* blog post section styling */
+
+.blog-post-detail {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* actually re-used this styling banner for recipes and plants but haven't renamed it */
+.blog-post-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;     /* crop to fill area */
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+.blog-post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog-post-author {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.blog-post-body {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* blog post card image (used on BlogPostsList) */
+.blog-post-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* comments styling */
+
+.comment-box {
+  background-color: #f9f9f9;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* card styling */
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
+.custom-text-card {
+  background-color: #f0fdf4; /* pale blue */
+  border: 1px solid #008080; /* thin teal outline */
+  box-shadow:
+    1px 1px 6px rgba(0, 128, 128, 0.5),
+    3px 3px 10px rgba(0, 128, 128, 0.4); /* glow mostly bottom & right */
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  color: #222; /* readable text */
+}
+
+/* form input custom styling */
+
+.custom-input {
+  border: 1px solid #008080;
+  box-shadow: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input:hover {
+  border-color: #008080;
+  box-shadow: 0 0 0 0.15rem rgba(183, 194, 194, 0.25); /* teal glow */
+}
+
+.custom-input:focus {
+  border-color: #008080;
+  box-shadow: 0 0 0 0.25rem rgba(0, 128, 128, 0.35); /* stronger glow on focus */
+  outline: none;
+}
+
+/* footer styling */
+.footer {
+  text-align: center;
+  background-color: #e5fcfa;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+}
+
+
+/* header styling */
+
+.header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e5fcfa;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-title {
+  color: #333;
+  margin: 0;
+}
+
+.header-tagline {
+  font-style: italic;
+  color: #666;
+}
+
+/* navbar styling */
+
+.navbar {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+/* login and register form styling  */
+
+/* login and register form container */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* input container spacing */
+.input-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* input fields full width */
+.input-group input {
+  width: 100%;
+}
+
+/* error message styling */
+.login-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* section below form */
+.register-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* about page logo styling */
+.about-logo {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* responsive video styling - using for course page */
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* course card image styling */
+.course-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* healing moments styling */
+
+/* healing moments intro paragraph max width */
+.hm-intro-text {
+  max-width: 800px;
+}
+
+/* shared iframe styling for healing moments videos */
+.hm-healing-iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+/* homepage logo */
+.homepage-logo {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* landing page layout */
+.landing-container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* logo on landing page */
+.landing-logo {
+  display: block;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* adjust width of the label column in plant details table */
+.plant-field-label {
+  width: 30%;
+}
+
+/* plant directory styling */
+
+/* card image (same as blog cards) */
+.plant-card-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Search bar responsiveness and layout */
+.search-bar .search-input {
+  max-width: 400px;
+}
+
+
+/* recipe  styling */
+
+/*to ensure line breaks are preserved in ingredients and instructions */
+.preformatted {
+  white-space: pre-line;
+}
+
+/* limit width on input */
+.recipe-input {
+  max-width: 400px;
+}
+
+/* user profile styling */
+
+.user-profile-container {
+  max-width: 600px;
+  margin-top: 3rem; 
+}
